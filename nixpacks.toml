@@ -1,5 +1,6 @@
+providers = ["python"]
 [phases.setup]
-nixPkgs = ["ffmpeg", "python311", "nodejs_20"]
+nixPkgs = ["...", "ffmpeg", "gcc"]
 
 [phases.install]
 cmds = [
