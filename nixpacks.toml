@@ -1,12 +1,7 @@
-providers = ["python"]
-[phases.setup]
-nixPkgs = ["...", "ffmpeg", "gcc"]
+providers = ["python", "node"]
 
-[phases.install]
-cmds = [
-  "pip install -r requirements.txt",
-  "cd web/frontend && npm install"
-]
+[phases.setup]
+nixPkgs = ["...", "ffmpeg"]
 
 [phases.build]
 cmds = [
