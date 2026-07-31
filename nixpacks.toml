@@ -1,7 +1,0 @@
-providers = ["python"]
-
-[phases.setup]
-nixPkgs = ["...", "ffmpeg", "gcc"]
-
-[start]
-cmd = "python main.py"
